@@ -1,0 +1,175 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[]{awesome-cv}
+\usepackage{textcomp}
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+    \begin{document}
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Profile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	\headerfirstnamestyle{Waleed} \headerlastnamestyle{Ahmed} \\
+	\vspace{2mm}
+	\href{https://wahmed.dev}{{\textcolor{darkblue}{\faGlobe} wahmed.dev}}
+	\hspace{2mm}
+	\href{mailto:w29ahmed@uwaterloo.ca}{{\textcolor{darkblue}{\faEnvelope} w29ahmed@uwaterloo.ca}}
+	\hspace{2mm} 
+	{\textcolor{darkblue}{\faPhone} 647-708-7272} 
+	\hspace{2mm}
+	\href{https://www.linkedin.com/in/waleed-a}{{\textcolor{darkblue}{\faLinkedin} waleed-a}}
+	\hspace{2mm} 
+	\href{https://github.com/w29ahmed}{{\textcolor{darkblue}{\faGithub} w29ahmed}}
+\end{center}
+\cvsection{Skills}
+\vspace{-4mm}
+\begin{cventries}
+	\cventry
+	{}
+	{\def\arraystretch{1.15}{\begin{tabular}{ l l }
+		Languages:  & \hspace{1mm} {\skill{ C++, C, Python, JavaScript, Java, C\#, HTML, CSS, QML, Assembly}} \\
+		Libraries \& Frameworks:  & \hspace{1mm} {\skill{ ROS, OpenCV, Qt, Node, React, Express, Flask, Google Test, TensorFlow}} \\
+		Technologies:  & \hspace{1mm} {\skill{ Git, Linux, QNX, Perforce, SVN, MongoDB, Jenkins, Docker, LaTeX, Jira}} \\
+		\end{tabular}}}
+	{}
+	{}
+	{}
+\end{cventries}
+
+\vspace{-7mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Experience}
+\begin{cventries}
+	\cventry
+	{Autonomous Vehicles Software Engineering Intern}
+	{\href{https://www.huawei.com/ca/}{Huawei}}
+	{Toronto, ON}
+	{Sep 2020 – Dec 2020}
+	{\begin{cvitems}
+		\item {Developed a unit test suite for a Frenét frame motion planning stack with \textbf{90\%} code coverage using \textbf{Google Test}}
+		\item {Designed and implemented a path building library using \textbf{C++} to construct a variety of reference paths to test planning algorithms on}
+		\item {Used \textbf{C++} and \textbf{Matplotlib} to extract insights from vehicle trajectory data that helped expose flaws in motion planning algorithms}
+	\end{cvitems}}
+	\cventry
+	{Automotive ADAS Software Engineering Intern}
+	{\href{https://www.qualcomm.com/}{Qualcomm}}
+	{Toronto, ON}
+	{Jan 2020 – Apr 2020}
+	{\begin{cvitems}
+		\item {Developed system and application software for an ADAS and autonomous driving platform in \textbf{C/C++}}
+		\item {Accelerated performance of a \href{https://developer.qualcomm.com/software/fastcv-sdk}{\textbf{computer vision SDK}} by an average of \textbf{20x} by leveraging available hardware and software architecture in automotive focused Snapdragon SoCs}
+		\end{cvitems}}
+	\cventry
+	{Software Engineering Intern}
+	{\href{https://www.christiedigital.com/}{Christie Digital}}
+	{Kitchener, ON}
+	{May 2019 – Aug 2019}
+	{\begin{cvitems}
+		\item {Worked closely with QA and UI/UX designers for user interface development and maintenance to meet release deadlines across a wide variety of platforms using the \textbf{Qt} framework in \textbf{C++} and \textbf{QML}}
+		\item {Significantly reduced the effort needed to maintain code health through software architecture redesign and setup of a continuous \\integration pipeline on a \textbf{Jenkins} build server that included unit tests with \textbf{90\%} code coverage using \textbf{Google Test}}
+		\end{cvitems}}
+	\cventry
+	{Video Software Engineering Intern}
+	{\href{https://www.synaptivemedical.com/}{Synaptive Medical}}
+	{Toronto, ON}
+	{Sep 2018 – Dec 2018}
+	{\begin{cvitems}
+		\item {Improved visibility of biological tissue during surgical procedures through color manipulation using \textbf{C++ (OpenCV)} and \textbf{C\#}}
+		\item {Enabled intuitive usage of a color manipulation algorithm through a web interface built with \textbf{JavaScript}, \textbf{HTML}, and \textbf{CSS}}
+		\item {Post-processed image data in \textbf{Python} using \textbf{Pandas}, \textbf{Numpy}, and \textbf{Matplotlib} to analyze color manipulation}
+		\end{cvitems}}
+	\cventry
+	{Industrial Imaging Software Engineering Intern}
+    {\href{https://ppo.ca/}{P\&P Optica}}
+	{Waterloo, ON}
+	{Jan 2018 – Apr 2018}
+	{\begin{cvitems}
+		\item {Developed a robust image acquisition framework for rapid line scan imaging of food on an industrial conveyor belt}
+		\item {Implemented image correction algorithms and post-processing for industrial cameras in \textbf{Python} using \textbf{Numpy}, \textbf{OpenCV}, and \textbf{Matplotlib}}
+		\end{cvitems}}
+\end{cventries}
+\cvsection{Projects}
+\begin{cventries}
+	\cvproject{Autonomous Robot Racing \href{https://github.com/uwrobotics/RR-Hummingbot-Software}{\faGithub}}
+	{\href{https://uwrobotics.uwaterloo.ca/}{UW Robotics}}
+	{\begin{cvitems}
+		\item {Managed development for a robot that competed in the \href{https://iarrc.org/}{\textbf{International Autonomous Robot Racing Competition}}}
+		\item {Developed software architecture in \textbf{ROS} and \textbf{C++} for perception, mapping, and path planning using a stereo camera, IMU, and LiDAR}
+	\end{cvitems}}
+	\cvproject{Synviz \href{https://github.com/w29ahmed/Synviz}{\faGithub}}
+	{\href{https://devpost.com/software/synviz}{UofTHacks VII (3rd place)}}
+	{\begin{cvitems}
+		\item {Built an IoT device using a \textbf{Raspberry Pi} that could decode spoken text from facial input}
+		\item {Developed a backend web server in \textbf{Python} using \textbf{Flask}, \textbf{Google Cloud Storage}, \textbf{OpenCV}, and \textbf{TensorFlow}}
+	\end{cvitems}}
+	\cvproject{Agilite \href{https://github.com/w29ahmed/Agilite}{\faGithub}}
+	{\href{https://devpost.com/software/agilite}{DeltaHacks V}}
+	{\begin{cvitems}
+		\item {Built an image processing pipeline in \textbf{Python} using \textbf{OpenCV} and \textbf{TensorFlow} capable of recognizing handwritten text from an agile board}
+	\end{cvitems}}
+	\cvproject{Bicyle Sensor \href{https://github.com/w29ahmed/ECE298-Bicycle-Sensor}{\faGithub}}
+	{\href{https://uwflow.com/course/ece298}{ECE 298 Course Project}}
+	{\begin{cvitems}
+		\item {Designed hardware and software for an ultrasonic object detection module aimed at cyclists on the \href{https://www.ti.com/product/MSP430FR4133}{\textbf{MSP430}} low power MCU platform}
+	\end{cvitems}}
+\end{cventries}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Education}
+\begin{cventries}
+	\cventry
+	{B.ASc Computer Engineering, Option in Artificial Intelligence}
+	{\href{https://uwaterloo.ca/future-students/programs/computer-engineering}{University of Waterloo}}
+	{}
+	{Sep 2017 – Apr 2022}
+	{\begin{cvitems}
+		\item {Udemy: \href{https://www.udemy.com/certificate/UC-28be8e98-f2a4-4989-b09c-df1ee4a4cc03/}
+		{Web Development Bootcamp}, 
+		\href{https://www.udemy.com/certificate/UC-TJRJ90AG/}{Computer Vision}}
+		\item {Coursera: \href{https://www.coursera.org/account/accomplishments/specialization/BA8UYMH6SUSL}{Self-Driving Cars Specialization}, 
+		\href{https://www.coursera.org/account/accomplishments/verify/AELG6KXXJ88V}{Machine Learning}}
+	\end{cvitems}}
+\end{cventries}
+
+\end{document}
