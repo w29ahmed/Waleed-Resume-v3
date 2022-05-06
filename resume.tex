@@ -52,8 +52,8 @@
 	\href{https://wahmed.dev}{{\textcolor{darkblue}{\faGlobe} wahmed.dev}}
 	\hspace{2mm}
 	\href{mailto:waleed@wahmed.dev}{{\textcolor{darkblue}{\faEnvelope} waleed@wahmed.dev}}
-	\hspace{2mm} 
-	{\textcolor{darkblue}{\faPhone} 647-708-7272} 
+% 	\hspace{2mm} 
+% 	{\textcolor{darkblue}{\faPhone} 647-708-7272}
 	\hspace{2mm}
 	\href{https://www.linkedin.com/in/waleed-a}{{\textcolor{darkblue}{\faLinkedin} waleed-a}}
 	\hspace{2mm} 
@@ -65,7 +65,7 @@
 	\cventry
 	{}
 	{\def\arraystretch{1.15}{\begin{tabular}{ l l }
-		Languages:  & \hspace{1mm} {\skill{ C++, C, Python, JavaScript, Java, C\#, HTML, CSS, SQL, QML, Assembly}} \\
+		Languages:  & \hspace{1mm} {\skill{ C++, C, Python, JavaScript, Java, Rust, C\#, HTML, CSS, SQL, QML, Assembly}} \\
 		Libraries \& Frameworks:  & \hspace{1mm} {\skill{ ROS, OpenCV, Qt, Node, React, Express, Flask, Google Test, Thrift, Hadoop, Kafka}} \\
 		Tools \& Technologies:  & \hspace{1mm} {\skill{ Git, Linux, QNX, Perforce, SVN, MongoDB, Jenkins, Docker, LaTeX, Jira}} \\
 		\end{tabular}}}
@@ -75,18 +75,26 @@
 \end{cventries}
 
 \vspace{-7mm}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Experience
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \cvsection{Experience}
 \begin{cventries}
+% 	\cventry
+% 	{Incoming Software Engineer}
+% 	{\href{https://zoox.com/}{Zoox}}
+% 	{Foster City, CA}
+% 	{June 2022}
+% 	{\begin{cvitems}
+% 	    \item SW HIL team, supporting integration testing and validation of a cutting edge AI software stack
+% 	\end{cvitems}}
 	\cventry
 	{Software Engineering Intern}
 	{\href{https://zoox.com/}{Zoox}}
 	{Foster City, CA}
 	{Sep 2021 – Dec 2021}
 	{\begin{cvitems}
-	   % \item SW HIL team, supporting integration testing and validation of a cutting edge AI software stack
 	    \item Developed software features for an integration testing framework capable of running driving software on representative hardware
 	    \item Designed and developed an improved sensor playback system that enabled more efficient and accurate playback during integration tests
 	\end{cvitems}}
@@ -138,8 +146,18 @@
 % 		\item {Implemented image correction algorithms and post-processing for industrial cameras in \textbf{Python} using \textbf{Numpy}, \textbf{OpenCV}, and \textbf{Matplotlib}}
 % 		\end{cvitems}}
 \end{cventries}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \cvsection{Projects}
 \begin{cventries}
+	\cvproject{Vizia \href{https://github.com/vizia-fydp}{\faGithub}}
+	{\href{https://www.youtube.com/watch?v=aw0gHmt1xBc}{Capstone Design Project}}
+	{\begin{cvitems}
+		\item {Wearable glasses that can extract and communicate information from an image to a visually impaired user through audio transcription}
+		\item {Consists of glasses with \textbf{Raspberry Pi} for image capture, \textbf{Flask} web app for computer vision processing, and \textbf{iOS} app for audio playback}
+	\end{cvitems}}
 	\cvproject{Autonomous Robot Racing \href{https://github.com/UWRobotRacing/RR-Hummingbot-Software}{\faGithub}}
 	{\href{https://www.uwaterloorobotics.com}{UW Robotics}}
 	{\begin{cvitems}
@@ -152,17 +170,18 @@
 		\item {Built an IoT device using a \textbf{Raspberry Pi} that could decode spoken text from facial input}
 		\item {Developed a backend web server in \textbf{Python} using \textbf{Flask}, \textbf{Google Cloud Storage}, \textbf{OpenCV}, and \textbf{TensorFlow}}
 	\end{cvitems}}
-	\cvproject{Agilite \href{https://github.com/w29ahmed/Agilite}{\faGithub}}
-	{\href{https://devpost.com/software/agilite}{DeltaHacks V}}
-	{\begin{cvitems}
-		\item {Built an image processing pipeline in \textbf{Python} using \textbf{OpenCV} and \textbf{TensorFlow} capable of recognizing handwritten text from an agile board}
-	\end{cvitems}}
-	\cvproject{Bicyle Sensor \href{https://github.com/w29ahmed/ECE298-Bicycle-Sensor}{\faGithub}}
-	{\href{https://uwflow.com/course/ece298}{ECE 298 Course Project}}
-	{\begin{cvitems}
-		\item {Designed hardware and software for an ultrasonic object detection module aimed at cyclists on the \href{https://www.ti.com/product/MSP430FR4133}{\textbf{MSP430}} low power MCU platform}
-	\end{cvitems}}
+% 	\cvproject{Agilite \href{https://github.com/w29ahmed/Agilite}{\faGithub}}
+% 	{\href{https://devpost.com/software/agilite}{DeltaHacks V}}
+% 	{\begin{cvitems}
+% 		\item {Built an image processing pipeline in \textbf{Python} using \textbf{OpenCV} and \textbf{TensorFlow} capable of recognizing handwritten text from an agile board}
+% 	\end{cvitems}}
+% 	\cvproject{Bicyle Sensor \href{https://github.com/w29ahmed/ECE298-Bicycle-Sensor}{\faGithub}}
+% 	{\href{https://uwflow.com/course/ece298}{ECE 298 Course Project}}
+% 	{\begin{cvitems}
+% 		\item {Designed hardware and software for an ultrasonic object detection module aimed at cyclists on the \href{https://www.ti.com/product/MSP430FR4133}{\textbf{MSP430}} low power MCU platform}
+% 	\end{cvitems}}
 \end{cventries}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Education
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -174,7 +193,7 @@
 	{}
 	{Sep 2017 – Apr 2022}
 	{\begin{cvitems}
-	    \item Relevant Coursework: Distributed Computing, Robot Dynamics \& Control, Cooperative \& Adaptive Algorithms, Computer Networks, Database Systems, Operating Systems, Compilers, Systems Programming \& Concurrency, Algorithms \& Data Structures
+	    \item Relevant Coursework: Distributed Computing, Robot Dynamics \& Control, Cooperative \& Adaptive Algorithms, Programming for Performance, Autonomous Vehicles, Computer Networks, Database Systems, Operating Systems, Compilers, Systems Programming \& Concurrency, Algorithms \& Data Structures
 	    \item Online Coursework: \href{https://www.udemy.com/certificate/UC-28be8e98-f2a4-4989-b09c-df1ee4a4cc03/}{Web Development Bootcamp},
 	    \href{https://www.coursera.org/account/accomplishments/specialization/BA8UYMH6SUSL}{Self-Driving Cars Specialization},
 	    \href{https://www.coursera.org/account/accomplishments/verify/AELG6KXXJ88V}{Machine Learning}, \href{https://www.udemy.com/certificate/UC-TJRJ90AG/}{Computer Vision}
