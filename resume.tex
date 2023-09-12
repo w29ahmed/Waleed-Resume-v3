@@ -65,9 +65,9 @@
 	\cventry
 	{}
 	{\def\arraystretch{1.15}{\begin{tabular}{ l l }
-		Languages:  & \hspace{1mm} {\skill{ C++, C, Python, JavaScript, Java, Rust, C\#, HTML, CSS, SQL, QML, Assembly}} \\
-		Libraries \& Frameworks:  & \hspace{1mm} {\skill{ ROS, OpenCV, Qt, Node, React, Express, Flask, Google Test, Thrift, Hadoop, Kafka}} \\
-		Tools \& Technologies:  & \hspace{1mm} {\skill{ Git, Linux, QNX, Perforce, SVN, MongoDB, Jenkins, Docker, LaTeX, Jira}} \\
+		Languages:  & \hspace{1mm} {\skill{ C++, C, Python, Rust, Bash, JavaScript, Java, C\#, SQL }} \\
+		Libraries \& Frameworks:  & \hspace{1mm} {\skill{ ROS, Protobufs, DDS, OpenCV, Node, React, Express, Flask, Google Test, Pytest }} \\
+		Tools \& Technologies:  & \hspace{1mm} {\skill{ Git, Linux, Bazel, Docker, Elasticsearch, Grafana, Bamboo, Jenkins, Jira, LaTeX }} \\
 		\end{tabular}}}
 	{}
 	{}
@@ -87,8 +87,14 @@
 	{Foster City, CA}
 	{Jun 2022 – Present}
 	{\begin{cvitems}
-            \item Developing software tooling and analytics infrastructure to monitor and improve test platform health
-	    \item Building a high-level understanding of overall system design and component interaction to help guide requirements and methodology for functional and performance sign-off while providing support to teams using an integration testing framework
+     %    \item Developing software tooling and analytics infrastructure to monitor and improve test platform health
+	    % \item Building a high-level understanding of overall system design and component interaction to help guide requirements and methodology for functional and performance sign-off while providing support to teams using an integration testing framework
+        \item Developing software infrastructure using \textbf{C++} and \textbf{Python} for integration test platforms which utilize simulation and vehicle logs for system validation, safety clearance, and latency testing of driving software
+        \item Successfully investigated and resolved lidar emulator performance issues, reducing fault occurrences from \textbf{~60\%} of runs to \textbf{0\%}, thereby enhancing the stability and reliability of sensor playback during integration tests
+        \item Implemented fault injection capabilities for lidar playback, enabling fault response testing and safety clearance of driving software releases
+        \item Regularly triaged issues, led investigations, and monitored test platform health as an on-call engineer
+        \item Seamlessly transitioned mission-critical data used for on-call operations and updated its associated data pipelines from a deprecated \textbf{ElasticSearch} cluster to a more stable \textbf{OpenSearch} cluster, ensuring continuous data flow and service availability
+        \item Developed and maintained \textbf{Grafana} dashboards tailored to deliver essential metrics, aiding on-call engineers in their response efficiency
 	\end{cvitems}}
 	\cventry
 	{Software Engineering Intern}
@@ -124,8 +130,9 @@
 	{Kitchener, ON}
 	{May 2019 – Aug 2019}
 	{\begin{cvitems}
-		\item {Worked closely with QA and UI/UX designers for user interface development and maintenance to meet release deadlines across a wide variety of platforms using the \textbf{Qt} framework in \textbf{C++} and \textbf{QML}}
-		\item {Significantly reduced the effort needed to maintain code health through software architecture redesign and setup of a continuous \\integration pipeline on a \textbf{Jenkins} build server that included unit tests with \textbf{90\%} code coverage using \textbf{Google Test}}
+        \item Developed user interfaces with \textbf{Qt} in \textbf{C++/QML} and bolstered code quality with setup of a \textbf{90\%} code coverage \textbf{Jenkins} CI pipeline
+		% \item {Worked closely with QA and UI/UX designers for user interface development and maintenance to meet release deadlines across a wide variety of platforms using the \textbf{Qt} framework in \textbf{C++} and \textbf{QML}}
+		% \item {Significantly reduced the effort needed to maintain code health through software architecture redesign and setup of a continuous \\integration pipeline on a \textbf{Jenkins} build server that included unit tests with \textbf{90\%} code coverage using \textbf{Google Test}}
 		\end{cvitems}}
 	\cventry
 	{Video Software Engineering Intern}
@@ -133,9 +140,10 @@
 	{Toronto, ON}
 	{Sep 2018 – Dec 2018}
 	{\begin{cvitems}
-		\item {Improved visibility of biological tissue during surgical procedures through color manipulation using \textbf{C++ (OpenCV)} and \textbf{C\#}}
-		\item {Enabled intuitive usage of a color manipulation algorithm through a web interface built with \textbf{JavaScript}, \textbf{HTML}, and \textbf{CSS}}
-		\item {Post-processed image data in \textbf{Python} using \textbf{Pandas}, \textbf{Numpy}, and \textbf{Matplotlib} to analyze color manipulation}
+		\item {Advanced surgical visibility of biological tissue through color manipulation using \textbf{C++ (OpenCV)} and \textbf{C\#}}
+		% \item {Improved visibility of biological tissue during surgical procedures through color manipulation using \textbf{C++ (OpenCV)} and \textbf{C\#}}
+		% \item {Enabled intuitive usage of a color manipulation algorithm through a web interface built with \textbf{JavaScript}, \textbf{HTML}, and \textbf{CSS}}
+		% \item {Post-processed image data in \textbf{Python} using \textbf{Pandas}, \textbf{Numpy}, and \textbf{Matplotlib} to analyze color manipulation}
 		\end{cvitems}}
 % 	\cventry
 % 	{Industrial Imaging Software Engineering Intern}
@@ -154,13 +162,13 @@
 \cvsection{Projects}
 \begin{cventries}
 	\cvproject{Vizia \href{https://github.com/vizia-fydp}{\faGithub}}
-	{\href{https://www.youtube.com/watch?v=aw0gHmt1xBc}{Capstone Design Project}}
+	{\href{https://www.youtube.com/watch?v=aw0gHmt1xBc}{Capstone Project (Apr 2021-2022)}}
 	{\begin{cvitems}
 		\item {Wearable glasses that can extract and communicate information from an image to a visually impaired user through audio transcription}
 		\item {Consists of glasses with \textbf{Raspberry Pi} for image capture, \textbf{Flask} web app for computer vision processing, and an \textbf{iOS} app for audio playback}
 	\end{cvitems}}
-	\cvproject{Autonomous Robot Racing \href{https://github.com/UWRobotRacing/RR-Hummingbot-Software}{\faGithub}}
-	{\href{https://www.uwaterloorobotics.com}{UW Robotics}}
+	\cvproject{Autonomous Robot Racing (Software Lead) \href{https://github.com/UWRobotRacing/RR-Hummingbot-Software}{\faGithub}}
+	{\href{https://www.uwaterloorobotics.com}{UW Robotics (May 2018 - Aug 2019)}}
 	{\begin{cvitems}
 		\item {Managed development for a robot that competed in the \textbf{International Autonomous Robot Racing Competition}}
 		\item {Developed software architecture in \textbf{ROS} and \textbf{C++} for perception, mapping, and path planning using a stereo camera, IMU, and LiDAR}
@@ -194,7 +202,8 @@
 	{}
 	{Sep 2017 – Apr 2022}
 	{\begin{cvitems}
-	    \item Relevant Coursework: Distributed Computing, Robot Dynamics \& Control, Programming for Performance, Autonomous Vehicles, Computer Networks, Database Systems, Operating Systems, Compilers, Systems Programming \& Concurrency, Algorithms \& Data Structures
+	    \item Notable Coursework: Distributed Computing, Programming for Performance, Robot Dynamics \& Control, Autonomous Vehicles
+        % \item Relevant Coursework: Distributed Computing, Robot Dynamics \& Control, Programming for Performance, Autonomous Vehicles, Computer Networks, Database Systems, Operating Systems, Compilers, Systems Programming \& Concurrency, Algorithms \& Data Structures
 	    % \item Online Coursework: \href{https://www.udemy.com/certificate/UC-28be8e98-f2a4-4989-b09c-df1ee4a4cc03/}{Web Development Bootcamp},
 	    % \href{https://www.coursera.org/account/accomplishments/specialization/BA8UYMH6SUSL}{Self-Driving Cars Specialization},
 	    % \href{https://www.coursera.org/account/accomplishments/verify/AELG6KXXJ88V}{Machine Learning},           
